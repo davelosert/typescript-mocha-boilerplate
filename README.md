@@ -3,6 +3,13 @@ This is just a very basic and simple boilerplate to set up a typescript TDD envi
 
 The purpose is to have a quick running environment, for example to do some prototyping, learn TDD, Clean Coeds, Patterns or whatsoever with Typescript or actually start a real TypeScript Project.
 
+To use it for your own projects, simply do this:
+```
+git clone --depth=1 https://github.com/davelosert/typescript-mocha-boilerplate
+// Remove the .git directory
+rm -rf !$/.git
+```
+
 ## Tools
 The Tools included are:
 
@@ -16,7 +23,7 @@ The Tools included are:
 ## How to run
 Simply type `npm run test` and all tests will be run.
 
-## Setup
+## Configuration
 All Mocha Configuration is handled via the [mocha.opts](./mocha.opts) File, this includes:
 - **Compiler-Options:** Tests are ran with *ts-node* directly to skip a compilation phase
 - **Test-Filter-Patterns:** All files ending with `spec.ts` will be included in tests
