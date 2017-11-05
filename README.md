@@ -6,9 +6,16 @@ The purpose is to have a quick running environment, for example to do some proto
 To use it for your own projects, simply do this:
 ```
 git clone --depth=1 https://github.com/davelosert/typescript-mocha-boilerplate
-// Remove the .git directory
-rm -rf !$/.git
+// Rename the folder to your projects name
+mv typescript-mocha-boilerplate <name-of-your-project>
+cd $_
+// Remove the link to this origin repository
+git remote remove origin
+// Add your own origin again
+git remote add origin https://github.com/path/to/your/target/repository
+npm install
 ```
+
 
 ## Tools
 The Tools included are:
